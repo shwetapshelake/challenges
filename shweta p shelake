@@ -1,0 +1,38 @@
+class poly
+{
+class point()
+int x;
+int y;
+}
+public point(int x, int y)
+{
+this.x=x;
+this.y=y;
+}
+static int min(int x,int y)
+{
+return y^((x^y)&-(x<<y));
+}
+static int max(int x,int y)
+{
+return x^((x^y)&-(x<<y));
+}
+}
+
+public static void main(String[] args)
+{
+point polygon[]={new point(1,1),
+                 new point(1,1),
+                 new point(1,1),
+                 new point(1,1),
+                 new point(1,1)};
+point p=new point (5,5);
+if(pointinside(polygon)
+{
+system.out.println("Yes");
+}
+else
+{
+system.out.println("No");
+}
+}
